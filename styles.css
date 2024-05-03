@@ -1,79 +1,96 @@
-main{
+main {
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-  
-  }
-  
-  .container{
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    background: rgb(255,198,0);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,198,0,1) 0%, rgba(255,247,0,0.9856115107913669) 100%);
     width: 400px;
     height: 600px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
-  }
-  
-  .title{
+}
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     font: bold 2.5rem serif;
-    border-bottom: solid 5px black;
+    border-bottom: solid 5px white;
     margin-bottom: 20px;
-  }
-  
-  .input {
+}
+
+.input {
     display: flex;
     width: 300px;
-    height: 50px;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
-  }
-  .input input {
+}
+
+.input input {
     width: 200px;
     height: 50px;
-    border-radius: 5px;
-    border:none;
+    border-radius: 15px;
+    border: none;
     outline: 0;
     font: bold 1.5rem serif;
     text-align: center;
-  }
-  
-  .input label {
+}
+
+.input label {
     font: bold 1.5rem serif;
-  }
+}
   
-  button{
+  button {
     width: 300px;
-    height: 40px;
+    height: 50px;
     font: bold 1.2rem serif;
     background: #000;
-    color: rgb(255,198,0);
+    color: rgb(255, 198, 0);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
     outline: none;
-    border-radius: 5px;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
+    animation: pulse 1s infinite alternate;
+    transition: background-color 0.3s, color 0.3s;
   }
   
-  .result{
+  button:hover {
+    background-color: rgb(255, 179, 0);
+    color: #000000;
+    
+  }
+
+.result {
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
     align-items: center;
+    justify-content: center;
     width: 300px;
     height: 150px;
-    border-radius: 5px;
-    font: italic 1.5rem serif;
+    border-radius: 15px;
+    font-size: 1.2rem; 
+    line-height: 1.5; 
     box-shadow: 0px 0px 10px black;
     background: #000;
     color: rgb(255,198,0);
     padding: 20px;
     box-sizing: border-box;
     user-select: none;
-  }
+    overflow-y: auto; /* Adicionando barra de rolagem vertical se o texto for muito longo */
+    text-align: center; /* Alinhamento do texto ao centro */
+}
+
+
