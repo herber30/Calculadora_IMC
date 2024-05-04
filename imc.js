@@ -28,16 +28,16 @@ function imc() {
             descricao = 'Você está dentro da faixa de peso considerada saudável pela OMS.';
         } else if (valorIMC < 29.9) {
             classificacao = 'Sobrepeso';
-            descricao = 'Você está com sobrepeso. É importante adotar hábitos saudáveis e fazer exercícios regularmente.';
+            descricao = 'É importante adotar hábitos saudáveis e fazer exercícios regularmente.';
         } else if (valorIMC < 34.9) {
             classificacao = 'Obesidade grau I';
-            descricao = 'Você está com obesidade grau I. Recomendamos procurar orientação médica para avaliação e acompanhamento.';
+            descricao = 'É fundamental procurar orientação médica para avaliação e acompanhamento.';
         } else if (valorIMC < 39.9) {
             classificacao = 'Obesidade grau II';
-            descricao = 'Você está com obesidade grau II. É fundamental buscar orientação médica para tratamento e acompanhamento.';
+            descricao = 'É fundamental buscar orientação médica para tratamento e acompanhamento.';
         } else {
             classificacao = 'Obesidade grau III (mórbida)';
-            descricao = 'Você está com obesidade grau III. É urgente procurar ajuda médica para tratamento.';
+            descricao = 'É fundamental buscar orientação médica para tratamento e acompanhamento.';
         }
 
         resultado.innerHTML = `<strong>${nome}, seu IMC é ${valorIMC}</strong>. Você está classificado como <strong>${classificacao}</strong>. ${descricao}`;
